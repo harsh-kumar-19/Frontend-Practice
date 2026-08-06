@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(231, 223, 223, 0.778);
+    padding: 30px 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.card{
+    width: min-content;
+    background: white;
+    overflow: hidden;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 20px rgb(50, 49, 49);
+    transition: 0.4s;
+
+}
+.card:hover{
+    transform: scale(1.02) rotate(1deg);
+}
+.content{
+    padding: 10px 20px;
+}
+.card-image{
+    width: 335px;
+    height: 145px;
+    position: relative;
+}
+.fa-heart{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgba(212, 51, 30, 0.793);
+    padding: 5px 24px 5px 5px;
+    background: rgba(255, 255, 255, 0.727);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.fa-heart:hover{
+    transform: scale(1.05);
+    color: rgba(255, 0, 0, 0.921);
+}
+.new{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(225, 20, 20, 0.848);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgba(243, 238, 238, 0.892);
+    font-weight: 500;
+}
+.card-image img{
+    width: 100%;
+    transition: 0.4s;
+}
+.card-image img:hover{
+    transform: scale(1.05);
+}
+.name-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-price h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.name-price span{
+    font-weight: 700;
+    color: rgba(17, 17, 238, 0.795);
+    font-size: 1.5rem;
+}
+.perfume{
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    background: rgba(142, 208, 229, 0.879);
+    text-align: start;
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+.perfume:hover{
+    background: rgba(103, 192, 219, 0.927);
+    color: rgba(61, 57, 57, 0.793);
+}
+.quality-desc{
+    color: black;
+    font-size: 1.1rem;
+    padding: 10px 0px;
+}
+.rating{
+    padding: 20px 0px 15px 0px;
+}
+.rating .fa-solid{
+    color: rgba(237, 197, 17, 0.851);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.free-delivery{
+    position: absolute;
+    right: 8px;
+    bottom: 38px;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 600;
+    font-size: 12px;
+}
+.icon{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.icon .icon-design{
+    background: rgba(230, 223, 223, 0.803);
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.add-to-cart{
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    background: rgba(76, 76, 182, 0.868);
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    transition: 0.4s;
+}
+.add-to-cart:hover{
+    background: rgba(26, 26, 220, 0.934);
+    transform: translateX(5px);
+}
+
+
+@media (max-width:768px){
+
+    body{
+        padding: 20px 10px;  
+    }
+
+    .card{
+        width: 100%;
+        max-width: 335px;
+        margin: 20px auto;
+    }
+
+    .card-image{
+        width: 100%;
+    }
+
+    .footer{
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .add-to-cart{
+        width: 100%;
+    }
+}
